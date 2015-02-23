@@ -1,0 +1,57 @@
+body {
+	background: #333;
+    color: #fff;
+    font-family: roboto;
+    font-weight: 100;
+    text-align: center;
+}
+
+div {
+    position: absolute;
+	height: 40px;
+	width: 120px;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -60px;
+    cursor: pointer;
+    background: rgb( 32, 128, 204);
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb( 35, 86, 166 );
+}
+
+div:hover {
+    -webkit-animation: pulsate 2s infinite; /* Chrome, Safari, Opera */ 
+    animation: pulsate 2s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes pulsate {
+    0% {
+    	background: rgb( 32, 128, 204);
+    }
+
+    50% {
+    	background: rgb( 67, 167, 223);
+    }
+
+    100% {
+    	background: rgb( 32, 128, 204);
+    }
+}
+
+/* Standard syntax */
+@keyframes pulsate {
+    0% {
+    	opacity: 1;
+    }
+
+    50% {
+    	opacity: .9;
+    }
+
+    100% {
+    	opacity: 1;
+    }
+}

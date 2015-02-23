@@ -1,0 +1,74 @@
+body {
+	background: #333;
+    padding-top: 20px;
+}
+
+#one {
+	height: 50px;
+	width: 200px;
+    border-radius: 4px;
+	background: #F3EFE0;
+	position: relative;
+    margin: auto;
+}
+
+#one:hover {
+    cursor: pointer;
+    -webkit-animation: shake 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-interation-count: 1;
+    animation: bounce 0.3s;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes shake {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: -10px;
+    }
+
+    40% {
+        left: 10px;
+    }
+
+    60% {
+        left: -6px;
+    }
+
+    80% {
+        left: 6px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes shake {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: -10px;
+    }
+
+    40% {
+        left: 10px;
+    }
+
+    60% {
+        left: -6px;
+    }
+
+    80% {
+        left: 6px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
